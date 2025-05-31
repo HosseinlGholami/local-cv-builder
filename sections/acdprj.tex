@@ -1,0 +1,69 @@
+\vspace{-0.75cm}
+\section{Academic projects}
+
+\large{
+    \textbf{Project related to B.S.}
+     }
+\denseouterlist{
+    \entry
+    {\href{https://github.com/HosseinlGholami/B.s.c-prj}{Implementation of cloud switches supporting the measurement of power, temperature, and humidity through MQTT protocol}}
+    % \innerlist
+    {\textendash A socket with two 10 amp outputs was designed to be controlled (on/off) from the MQTT client dashboard, which could calculate each output’s power consumption with the ACS712 sensor. it also capabeled of reporting temperature and humidity with the DHT22 sensor. ESP32 was adopted as a processor in this project, “cloudmqtt.com” was used as a message broker, and the MQTT Dash android application was exploited as dashboard. \scriptsize{\color{gray}{\href{https://drive.google.com/drive/folders/1ICIlKOc84qtPh1K8paZ4Qa0Qw9R8SjDF?usp=sharing}{Demo-video}}}}
+    
+    % \entry
+    % {\href{https://github.com/HosseinlGholami/BluetoothCar}{Digital system course project}}
+    % \innerlist
+    % {\textendash Simulate a Bluetooth-controlled toy car. In this Design, various types of motion were defined and presented. This simulation was done by proteus.}
+    
+    % \entry
+    % {\href{https://github.com/HosseinlGholami/gm-c}{ Filter-design course project}}
+    % \innerlist
+    % {\textendash Design an n-Order Butterworth Gm-C Filter(n=4), which are active filters, and just the capacitors can be used in the design.}
+}
+
+\large{
+    \textbf{Project related to M.S.}}
+\denseouterlist{
+    \entry
+    {Analysis of data received from vehicles, for driver behavior profiling on the computing cloud}
+    % \innerlist
+    {\textendash{\href{https://github.com/HosseinlGholami/Event-Extraction}{
+    Create a model for detecting harsh driving events from accelerator and gyroscope data:}
+    }\newline
+     {Utilizing a sliding window on time-series data to detect driving events such as harsh break or accelerate, line changing, ... with a decision tree model to have a real-time process with microcontrollers. each window calculates DTW(dynamic time warping) distance with a specific event and detects the driver's driving style.}
+    }
+    % \innerlist
+    {\textendash{\href{https://drive.google.com/file/d/1w7lotKGIPuQXmhTb_Bw9BShT6hqA5uw6/view?usp=sharing}{
+    Send the detected events to the cloud in order to store them:}
+    }\newline
+    {A server application was developed to receive MQTT packets and store them. I'v used RabbitMQ as a massage broker that is capable of receiving MQTT packet and Redis as temporary storage for other analyses. and also a storage loader to connect parts. the whole platform was developed inside docker containers. Also, an application was created to simulate the driving of drivers to collect data.}
+    }
+    
+    % \innerlist
+    {\textendash{\href{https://github.com/HosseinlGholami/BehavePart}{Analyze the driver's behavior at the end of the trip:}
+    }
+    {Grading each trip by Exploiting a dataset on driving drivers and their generated events with a little bit of statistical analysis, we could calculate the insurance share of each car therefore, we could encourage people to drive safer.}
+    }
+
+    
+    % \entry
+    % {\href{https://drive.google.com/file/d/1QdpHnUyoypCEMrqc6yDiMjl97jkO0qic/view?usp=sharing}{Machine learning course projects}}
+    % \innerlist
+    % {\textendash Implement the ID3 algorithm as a decision tree model and Bayesian-learning model for classification. \textendash Using the SVM model with different kernels for classification. \textendash Implement k-means algorithm for unsupervised clustering.}
+    
+    % \entry
+    % {\href{https://github.com/HosseinlGholami/Spark-Scala-zeppelin_notebook}{Mining of Massive Datasets course projects}}
+    % \innerlist
+    % {\textendash Using K-means++, Bisecting K-means Algorithm for clustering, RandomForest for classification, from MLlib of SPARK. Also, utilizing PageRank and ShortestPath from GraphX of spark. \textendash Solve image captioning problem, which dimensionality-reduced features has produced from CNN network, and after that, with RNN(Vanilla, LSTM), the captioning process would handle}
+    
+    % \entry
+    % {\href{https://github.com/HosseinlGholami/QueuingTheory-Prj}{Queuing theory course project}}
+    % \innerlist
+    % {\textendash }
+    
+    % \entry
+    % {\href{https://github.com/HosseinlGholami/Digital-Smart-System-Prj}{Digital smart system course projects}}
+    % \innerlist
+    % {\textendash Implement of CAN protocol between two STM32f1. \textendash A Lora node transmits data to a gateway with AT-Command. \textendash A ZigBee module sends commands to a Home-automation device(Remote Control Relays-ORVIBO brand) }
+    
+}

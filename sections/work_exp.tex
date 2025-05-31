@@ -1,0 +1,44 @@
+\section{Work Experience}
+
+\denseouterlist{
+
+    \entry{
+        \textbf{Digikala (Robotics Team)} – Software Engineer Tech Lead \hfill 2022–Present
+    }\newline
+    {
+        {As a tech lead of the Automation and Robotics team, I focus on developing innovative automation systems to enhance operational efficiency. My role involves designing and implementing embedded systems tailored for robotics solutions. I lead various projects, including:}
+        
+        \begin{itemize}        
+            % ==========================================================================================
+            \item \textbf{Wheel Sorter:} Developed a high-speed sorting system designed to streamline package handling and significantly enhance delivery times.The wheel sorter connects to a server via MQTT, enabling real-time communication and control. Each unit features a CAN bus interface, allowing for seamless integration with DC drivers. These DC drivers power the DC motors, which precisely control the rotation of the wheel units. Additionally, each sorter is equipped with a Sensopart camera for barcode reading, ensuring accurate tracking and sorting of packages. This combination of technologies optimizes the sorting process, improving operational efficiency and reliability. \href{https://docs.google.com/presentation/d/18PYNsekCzeDL2thVPtmaDzEQKxsrlhGOUNkhK7Xi9Cg/edit\#slide=id.g2ff77d0f3e9\_0\_146}{\color{gray}\scriptsize{ -Sorter Architecture}}
+            % TODO:\href{https://docs.google.com/presentation/d/18PYNsekCzeDL2thVPtmaDzEQKxsrlhGOUNkhK7Xi9Cg/edit\#slide=id.g2ff77d0f3e9\_0\_146}{\color{gray}\scriptsize{ -demo video}}
+        % ==========================================================================================
+            \item \textbf{P2L (Put to Light):} 
+                 Implemented an MQTT-based architecture for real-time communication between the ESP32 and server, allowing for the control of 45 LED strips with different colors. Developed an application layer protocol to enable light activation during item scanning, which reduced sorting time from 6 seconds to 5.1 seconds. Provided API documentation and supported the engineering operations team with integration into handheld applications.
+                % TODO:\href{https://docs.google.com/presentation/d/18PYNsekCzeDL2thVPtmaDzEQKxsrlhGOUNkhK7Xi9Cg/edit\#slide=id.g2ff77d0f3e9\_0\_146}{\color{gray}\scriptsize{ -demo video}}
+                
+            \begin{itemize}
+                \item \textbf{Version 1:} Utilized an AVR microcontroller connected to buttons and lights via a CAN bus system, integrating with the company's comprehensive warehouse management system. This version supported Over-the-Air (OTA) updates but faced challenges related to usability, cost, and maintenance.
+            
+                \item \textbf{Version 2:} Transitioned to a simplified architecture by replacing the CAN bus with LED strips connected to an ESP32 through a multiplexer. This redesign eliminated physical buttons, significantly reduced costs, and improved maintenance.
+                
+            \end{itemize}
+            
+            % ==========================================================================================
+            \item \textbf{Dimension Detection:} Created a dimension detection solution using advanced sensors to optimize warehouse space and improve inventory management.
+        \end{itemize}
+        }
+    }
+    
+    
+    \entry{
+        \textbf{Basir Andishan Bina Tadbir (BABT)} – Embedded Software Engineer \hfill 2021–2022
+    }
+    \newline
+    {Worked on the \href{https://babt.ir}{Multifunctional Vehicle Tracker} project, designing cost-effective, feature-rich car tracking systems. Chose MediaTek's MT2503 SoC to support GSM and GNSS, leveraging firmware from \href{http://www.new-mobi.com/product/showproduct.php?lang=en\&id=28}{new-mobie}. Responsible for overcoming challenges related to limited documentation and development community around the module. The project involved interfacing with multiple sensors (accelerometers, gyroscopes) and working with various GSM-GNSS modules from Quectel, Simcom, AiThinker, and others.}
+
+    \entry{
+        \textbf{Andishe Fartak AmirKabir (Atrovan)} – Embedded Developer \hfill 2018–2019
+    }\newline
+    {Developed the \href{https://www.aparat.com/v/g69c881}{Indoor IR Controller} for smart home applications. The project involved replacing multiple IR remotes (TV, receiver, air conditioner, etc.) with a single mobile-controlled device. Developed firmware for the STM32F1 microcontroller to learn and regenerate IR signals, while ESP8266 handled communication with the server and mobile app.}
+}

@@ -1,0 +1,54 @@
+\documentclass[letterpaper,11pt]{article}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{MidnightBlue}
+
+\usepackage{simplecv}
+
+% Add tikz package for skill bars
+\usepackage{tikz}
+
+\newcommand{\skillbar}[1]{
+    \begin{tikzpicture}
+        \fill[MidnightBlue] (0,0) rectangle (#1*1, 0.3); 
+        \fill[gray] (#1*1,0) rectangle (5, 0.3);
+    \end{tikzpicture}
+}
+
+\boldname{Surname}{Name}{N.}
+
+\begin{document}
+
+% Heading
+\headinginline{Hossein Gholami}{
+    
+    \begin{flushleft}
+    Email: \email{HosseinGholami.1995@gmail.com}      \\
+    LinkedIn: \linkedin{HosseinlGholami} \\
+    GitHub: \github{HosseinlGholami} \\
+    PhoneNumber: +98 912 945 918 3
+    \end{flushleft}
+}
+
+% Main sections
+\import{sections/}{education.tex}
+
+\import{sections/}{Skil.tex}
+
+\import{sections/}{work_exp.tex}
+
+\import{sections/}{hobbies.tex}
+
+% Optional sections (uncomment as needed)
+% \import{sections/}{awards.tex}
+% \import{sections/}{teach_exp.tex}
+% \import{sections/}{wrkprj.tex}
+% \import{sections/}{acdprj.tex}
+% \import{sections/}{Refrences.tex}
+
+% Academic degree sections (uncomment if needed)
+% \sidebyside
+%     {\import{sections/}{bs.tex}}
+%     {\import{sections/}{ms.tex}}
+
+\end{document}

@@ -1,0 +1,98 @@
+# LaTeX build artifacts
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+
+# Intermediate documents
+*.dvi
+*.xdv
+*-converted-to.*
+
+# These rules might exclude image files for figures etc.
+# *.ps
+# *.eps
+# *.pdf
+
+# latexrun
+*.latexrun
+
+# Bibliography
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
+# Build tool auxiliary files
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Build outputs
+*.pdf
+!README.pdf
+
+# Beamer
+*.nav
+*.pre
+*.snm
+*.vrb
+
+# Changes tracking
+*.bak
+*.sav
+
+# Temporary folders typically created by old template package versions
+*-oldversion
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Windows thumbnail cache files
+*.stackdump
+
+# Editor files
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Output directories
+CV_Output/
+output/
+build/
+
+# Archive files
+*.zip
+*.rar
+*.7z
+*.tar.gz
+*.tar.bz2
+
+# Local configuration files
+*.local 
