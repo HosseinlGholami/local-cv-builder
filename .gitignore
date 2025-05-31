@@ -84,7 +84,6 @@ desktop.ini
 
 # Output directories
 CV_Output/
-output/
 build/
 
 # Archive files
